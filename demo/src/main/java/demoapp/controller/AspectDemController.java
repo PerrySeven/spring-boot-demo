@@ -42,8 +42,8 @@ public class AspectDemController {
 
         return  "project " + projectInfo.getProjectCode();
     }
-
-    @RequestMapping("/setData1")
+    @MyAnnotation
+    @PostMapping("/setData1")
     public String setData1 (@Valid @RequestBody ProjectInfo  projectInfo)throws Exception
     {
         return  "project " + projectInfo.getProjectCode();

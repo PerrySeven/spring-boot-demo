@@ -37,6 +37,9 @@ public class GlobalExceptionHandler {
 //        return  exception.getMessage();
     }
 
+    /*
+    参数校验的异常类
+     */
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public String validationBodyException(MethodArgumentNotValidException exception){
 

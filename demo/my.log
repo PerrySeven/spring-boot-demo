@@ -1,0 +1,84 @@
+2019-01-07 22:59:30.550  INFO 2952 --- [main] demoapp.DemoApplication                  : Starting DemoApplication on PC-20180714CUOZ with PID 2952 (started by Administrator in E:\余培\github\spring-boot-demo\demo)
+2019-01-07 22:59:30.559  INFO 2952 --- [main] demoapp.DemoApplication                  : No active profile set, falling back to default profiles: default
+2019-01-07 22:59:30.986  INFO 2952 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@465232e9: startup date [Mon Jan 07 22:59:30 CST 2019]; root of context hierarchy
+2019-01-07 22:59:42.176  INFO 5156 --- [main] demoapp.DemoApplication                  : Starting DemoApplication on PC-20180714CUOZ with PID 5156 (started by Administrator in E:\余培\github\spring-boot-demo\demo)
+2019-01-07 22:59:42.191  INFO 5156 --- [main] demoapp.DemoApplication                  : No active profile set, falling back to default profiles: default
+2019-01-07 22:59:42.824  INFO 5156 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@463fd068: startup date [Mon Jan 07 22:59:42 CST 2019]; root of context hierarchy
+2019-01-07 22:59:52.281  INFO 5156 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-07 22:59:52.363  INFO 5156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-07 22:59:52.367  INFO 5156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-01-07 22:59:53.108  INFO 5156 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-07 22:59:53.110  INFO 5156 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10304 ms
+2019-01-07 22:59:54.581  INFO 5156 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-07 22:59:54.627  INFO 5156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-07 22:59:54.628  INFO 5156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-07 22:59:54.629  INFO 5156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-07 22:59:54.631  INFO 5156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-07 22:59:57.490  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getData2],methods=[GET]}" onto public java.lang.String demoapp.controller.AspectDemController.getData(java.lang.String)
+2019-01-07 22:59:57.493  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getData1],methods=[GET]}" onto public java.lang.String demoapp.controller.AspectDemController.getData()
+2019-01-07 22:59:57.496  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/setData],methods=[POST]}" onto public java.lang.String demoapp.controller.AspectDemController.setData(demoapp.entity.model.ProjectInfo,org.springframework.validation.BindingResult)
+2019-01-07 22:59:57.498  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/setData1]}" onto public java.lang.String demoapp.controller.AspectDemController.setData1(demoapp.entity.model.ProjectInfo) throws java.lang.Exception
+2019-01-07 22:59:57.501  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thread/get]}" onto public java.lang.String demoapp.controller.MultithreadController.getMultiThreadData() throws java.lang.InterruptedException
+2019-01-07 22:59:57.509  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-07 22:59:57.512  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-07 22:59:57.514  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-07 22:59:57.521  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-07 22:59:57.523  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-07 22:59:58.681  INFO 5156 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-07 23:00:01.729  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@463fd068: startup date [Mon Jan 07 22:59:42 CST 2019]; root of context hierarchy
+2019-01-07 23:00:02.434  INFO 5156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-07 23:00:02.435  INFO 5156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-07 23:00:02.511  INFO 5156 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-01-07 23:00:02.685  INFO 5156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-07 23:00:04.232  INFO 5156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-07 23:00:04.275  INFO 5156 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-01-07 23:00:04.276  INFO 5156 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-07 23:00:04.370  INFO 5156 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-07 23:00:04.489  INFO 5156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-07 23:00:04.771  INFO 5156 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDataUsingGET_1
+2019-01-07 23:00:05.542  INFO 5156 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-07 23:00:05.578  INFO 5156 --- [main] demoapp.DemoApplication                  : Started DemoApplication in 24.932 seconds (JVM running for 29.0)
+2019-01-07 23:01:28.167  INFO 5156 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-07 23:01:28.168  INFO 5156 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-07 23:01:28.392  INFO 5156 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 223 ms
+2019-01-07 23:04:37.209  INFO 4144 --- [main] demoapp.DemoApplication                  : Starting DemoApplication on PC-20180714CUOZ with PID 4144 (started by Administrator in E:\余培\github\spring-boot-demo\demo)
+2019-01-07 23:04:37.218  INFO 4144 --- [main] demoapp.DemoApplication                  : No active profile set, falling back to default profiles: default
+2019-01-07 23:04:37.446  INFO 4144 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@282cb7c7: startup date [Mon Jan 07 23:04:37 CST 2019]; root of context hierarchy
+2019-01-07 23:04:45.011  INFO 4144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-01-07 23:04:45.041  INFO 4144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-01-07 23:04:45.051  INFO 4144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-01-07 23:04:45.671  INFO 4144 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-01-07 23:04:45.683  INFO 4144 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8260 ms
+2019-01-07 23:04:47.045  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-01-07 23:04:47.057  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-07 23:04:47.060  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-07 23:04:47.061  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-07 23:04:47.061  INFO 4144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-07 23:04:49.699  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getData2],methods=[GET]}" onto public java.lang.String demoapp.controller.AspectDemController.getData(java.lang.String)
+2019-01-07 23:04:49.704  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/getData1],methods=[GET]}" onto public java.lang.String demoapp.controller.AspectDemController.getData()
+2019-01-07 23:04:49.707  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/setData],methods=[POST]}" onto public java.lang.String demoapp.controller.AspectDemController.setData(demoapp.entity.model.ProjectInfo,org.springframework.validation.BindingResult)
+2019-01-07 23:04:49.710  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/demo/setData1],methods=[POST]}" onto public java.lang.String demoapp.controller.AspectDemController.setData1(demoapp.entity.model.ProjectInfo) throws java.lang.Exception
+2019-01-07 23:04:49.714  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thread/get]}" onto public java.lang.String demoapp.controller.MultithreadController.getMultiThreadData() throws java.lang.InterruptedException
+2019-01-07 23:04:49.738  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-01-07 23:04:49.758  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-01-07 23:04:49.761  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-01-07 23:04:49.774  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-07 23:04:49.778  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-07 23:04:50.996  INFO 4144 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-07 23:04:53.886  INFO 4144 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@282cb7c7: startup date [Mon Jan 07 23:04:37 CST 2019]; root of context hierarchy
+2019-01-07 23:04:54.458  INFO 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-07 23:04:54.458  INFO 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-07 23:04:54.528  INFO 4144 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-01-07 23:04:54.714  INFO 4144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-07 23:04:56.071  INFO 4144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-07 23:04:56.091  INFO 4144 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-01-07 23:04:56.091  INFO 4144 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-07 23:04:56.151  INFO 4144 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-07 23:04:56.241  INFO 4144 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-07 23:04:56.471  INFO 4144 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDataUsingGET_1
+2019-01-07 23:04:56.877  INFO 4144 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-01-07 23:04:56.897  INFO 4144 --- [main] demoapp.DemoApplication                  : Started DemoApplication in 20.981 seconds (JVM running for 23.008)
+2019-01-07 23:06:07.666  INFO 4144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-07 23:06:07.667  INFO 4144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-07 23:06:07.784  INFO 4144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 117 ms
+2019-01-07 23:06:25.147 ERROR 4144 --- [http-nio-8080-exec-8] demoapp.common.GlobalExceptionHandler    : Data check failure : object{projectInfo},field{projectCode},errorMessage{长度不对，赶紧赶紧改}
