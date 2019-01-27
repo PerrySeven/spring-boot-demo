@@ -21,7 +21,7 @@ public class AspectDemController {
         return  "getData1";
     }
 
-    @MyAnnotation
+    @MyAnnotation(key = "12312##")
     @GetMapping("/getData2")
     public String getData(String id)
     {
