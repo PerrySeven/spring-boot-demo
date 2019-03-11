@@ -551,3 +551,16 @@ Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in po
 2019-01-27 23:40:15.672  INFO 3044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2019-01-27 23:40:15.673  INFO 3044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2019-01-27 23:40:15.876  INFO 3044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 203 ms
+2019-03-02 23:40:51.126  INFO 516 --- [main] demoapp.DemoApplication                  : Starting DemoApplication on PC-20180714CUOZ with PID 516 (started by Administrator in E:\余培\github\spring-boot-demo\demo)
+2019-03-02 23:40:51.126  INFO 516 --- [main] demoapp.DemoApplication                  : No active profile set, falling back to default profiles: default
+2019-03-02 23:40:51.299  INFO 516 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7139992f: startup date [Sat Mar 02 23:40:51 CST 2019]; root of context hierarchy
+2019-03-02 23:41:02.065  INFO 516 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-03-02 23:41:02.159  INFO 516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-02 23:41:02.174  INFO 516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-03-02 23:41:02.654  INFO 516 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-02 23:41:02.654  INFO 516 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11355 ms
+2019-03-02 23:41:04.744  INFO 516 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-03-02 23:41:04.791  INFO 516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-02 23:41:04.791  INFO 516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-02 23:41:04.791  INFO 516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-02 23:41:04.791  INFO 516 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
