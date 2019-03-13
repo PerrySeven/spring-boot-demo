@@ -1,5 +1,8 @@
 package demoapp.common.ExcelPlugin;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ReturnModel {
 
     private  String key1;

@@ -9,11 +9,11 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Component;
-import springfox.documentation.spring.web.json.Json;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -129,8 +129,47 @@ public class ExcelDataCalUtil {
     }
 
     public Object getObjectByClassAndData(String path, int column, int rows, int headerIndex,
-                                          int[] requirelist, String returnJson)
-    {
+                                          int[] requirelist, Object modelObj)  {
+        Workbook workbook = this.readExcel(path);
+        Class classObj = modelObj.getClass();
+        JSONArray strObj =  new JSONArray();
+        int index = 0;
+        for(Field o:classObj.getDeclaredFields())
+        {
+            strObj.set(index++,o.getName());
+            System.out.println(o.getName());
+        }
+        List<ExcelObjectJSON> objectJSONS = new ArrayList<>();
+        //JSONObject obj = (JSONObject) getObject(returnJson);
+        /// 通过header 实例化出来一个对应的 jsonObject,然后给这个对象里面塞值
+        for (int i = 0; i < workbook.getNumberOfSheets(); ++i) {
+            Sheet sheetObj = workbook.getSheetAt(i);
+            ExcelObjectJSON sheetData = new ExcelObjectJSON();
+            sheetData.setSheetName(sheetObj.getSheetName());
+            List<Object> data = new ArrayList<>();
+            for (int j = 0; j < sheetObj.getPhysicalNumberOfRows(); ++j) {
+                Row rowObj = sheetObj.getRow(j);
+                JSONObject obj = new JSONObject();
+                for (int k = 0; k < rowObj.getPhysicalNumberOfCells(); ++k) {
+                    String tempStr =  strObj.get(k).toString();
+                    obj.put(tempStr,rowObj.getCell(k).toString());
+                }
+                if (j < headerIndex) {
+                    continue;
+                }
+                data.add(obj);
+            }
+
+            sheetData.setData(data);
+            objectJSONS.add(sheetData);
+        }
+        // header 只是一个由逗号隔开的String对象
+        // 如何将header 的简单数组转化为一个对象提供使用
+        JSONObject.parse("");
+        return JSONObject.toJSON(objectJSONS);
+
+
+
         // 获取到类中所有的的属性
         // 通过反射注册使用
         // 通过fileName 字段和header 字段匹配获取到对应数据的填写
